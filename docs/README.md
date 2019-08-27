@@ -1,5 +1,5 @@
 <p align="center">
-    <font size="7">
+    <font size="6">
         <a href="https://arxiv.org/abs/1907.01108">[Paper]</a>
         <a href="https://github.com/chahuja/language2pose">[Code]</a>
     </font>
