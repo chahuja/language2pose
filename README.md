@@ -1,5 +1,5 @@
 ## Language2Pose:Natural Language Grounded Pose Forecasting
-### [[Paper](https://arxiv.org/pdf/1907.01108.pdf)][[Webpage](http://chahuja.com/lamguage2pose)]
+### [[Paper](https://arxiv.org/pdf/1907.01108.pdf)][[Webpage](http://chahuja.com/language2pose)]
 
 
 There are 5 steps to running this code
