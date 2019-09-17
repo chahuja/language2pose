@@ -1,0 +1,3209 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<Robot Type='unknown type' RootNode='root_joint'>
+
+	<RobotNode name='BLNsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='44' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='1'/>
+			<limits lo='0' hi='22' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Sensor type='position' name='MARKER_C7'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='0' />
+					<row2 c1='0' c2='1' c3='0' c4='-38.9454' />
+					<row3 c1='0' c2='0' c3='1' c4='-0.688374' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_CLAV'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-0.205368' />
+					<row2 c1='0' c2='1' c3='0' c4='51.8562' />
+					<row3 c1='0' c2='0' c3='1' c4='-16.0151' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='BLNx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BLNx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.785398' hi='0.261799' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='BLNz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BLNy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.349066' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='BUNsegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BLNz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-0.261799' hi='0.261799' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='BLNy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BPSegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='80' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='1'/>
+			<limits lo='0' hi='40' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.11'/>
+			<CoM location='Custom' x='0' y='3.33729e-08' z='-35.8'/>
+			<InertiaMatrix>
+					<row1 c1='0.000454' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.0003637' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.0004191'/>
+			</InertiaMatrix>
+		</Physics>
+		<Sensor type='position' name='MARKER_L3'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='0' />
+					<row2 c1='0' c2='1' c3='0' c4='-50' />
+					<row3 c1='0' c2='0' c3='1' c4='22.278' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='BPx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BPx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.872665' hi='0.610865' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='BPz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BPy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.349066' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='BTSegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BPz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='BPy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BTSegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='120' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='1'/>
+			<limits lo='0' hi='60' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.1'/>
+			<CoM location='Custom' x='0' y='3.33729e-08' z='-33.6'/>
+			<InertiaMatrix>
+					<row1 c1='1.024' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.81796' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.676'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/BTSegment_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='BTx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BTx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.610865' hi='0.471239' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='BTz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BTy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.349066' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='collarSegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BTz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-0.628319' hi='0.628319' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='BTy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BUNsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='30' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='1'/>
+			<limits lo='0' hi='30' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.024'/>
+			<CoM location='Custom' x='0' y='3.33729e-08' z='-15'/>
+			<InertiaMatrix>
+					<row1 c1='0.0287585' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.0287585' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.0139392'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/BUNsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='BUNx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BUNx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.349066' hi='0.523599' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='BUNz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BUNy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.261799' hi='0.261799' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='MidHeadSegment_joint'/>
+		<Child name='HeadSegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='BUNz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-0.349066' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='BUNy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='HeadSegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='130' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='1'/>
+			<limits lo='0' hi='130' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.07'/>
+			<CoM location='Custom' x='0' y='3.33729e-08' z='-65'/>
+			<InertiaMatrix>
+					<row1 c1='0.612157' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.5733' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.430612'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/HeadSegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_LBHD'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-28.4608' />
+					<row2 c1='0' c2='1' c3='0' c4='-32.9923' />
+					<row3 c1='0' c2='0' c3='1' c4='-50.3193' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_LFHD'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-28.4608' />
+					<row2 c1='0' c2='1' c3='0' c4='31.9975' />
+					<row3 c1='0' c2='0' c3='1' c4='-50.3193' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RBHD'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='28.46' />
+					<row2 c1='0' c2='1' c3='0' c4='-32.9923' />
+					<row3 c1='0' c2='0' c3='1' c4='-50.3193' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RFHD'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='28.46' />
+					<row2 c1='0' c2='1' c3='0' c4='31.9975' />
+					<row3 c1='0' c2='0' c3='1' c4='-50.3193' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+	</RobotNode>
+
+
+	<RobotNode name='LAsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='-246' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='-1'/>
+			<limits lo='0' hi='246' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.04'/>
+			<CoM location='Custom' x='-2.75474e-12' y='1.04413e-05' z='139.5'/>
+			<InertiaMatrix>
+					<row1 c1='0.237419' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.256481' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.040572'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/LAsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_LTIP'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-12.8329' />
+					<row2 c1='0' c2='1' c3='0' c4='18.92' />
+					<row3 c1='0' c2='0' c3='1' c4='103.84' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='LAx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LAx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.698132' hi='0.523599' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LAz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LAy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.349066' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LAy_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_LANK'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-22.9033' />
+					<row2 c1='0' c2='1' c3='0' c4='4.86361e-07' />
+					<row3 c1='0' c2='0' c3='1' c4='-18.2531' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_LHEE'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='0.458916' />
+					<row2 c1='0' c2='1' c3='0' c4='-33.2631' />
+					<row3 c1='0' c2='0' c3='1' c4='-15.4982' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='LeftFootHeight_joint'/>
+		<Child name='LMrot_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LAz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-0.523599' hi='0.523599' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LAy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LEsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='-188' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='-1'/>
+			<limits lo='0' hi='188' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.027'/>
+			<CoM location='Custom' x='-8.25728e-12' y='3.81383e-05' z='106'/>
+			<InertiaMatrix>
+					<row1 c1='0.0837755' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.0940772' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.0287506'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/LEsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_LAEL'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-1.54455' />
+					<row2 c1='0' c2='1' c3='0' c4='-17.482' />
+					<row3 c1='0' c2='0' c3='1' c4='-2.20636' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_LAOL'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='12.4554' />
+					<row2 c1='0' c2='1' c3='0' c4='-15.5' />
+					<row3 c1='0' c2='0' c3='1' c4='-1.86715' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_LUPA'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-19.8687' />
+					<row2 c1='0' c2='1' c3='0' c4='2.6444' />
+					<row3 c1='0' c2='0' c3='1' c4='126.53' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='LEx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LEx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='2.79253' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LEz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LEz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-1.5708' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LWsegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LFx_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='0.987688' c2='-0.151104' c3='-0.0404882' c4='-8.8' />
+				<row2 c1='0.156434' c2='0.954034' c3='0.255633' c4='53.7' />
+				<row3 c1='0' c2='-0.258819' c3='0.965926' c4='-14.4' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.785398' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LFx_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_LTOE'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='14.1863' />
+					<row2 c1='0' c2='1' c3='0' c4='33.7441' />
+					<row3 c1='0' c2='0' c3='1' c4='-2.44184' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+	</RobotNode>
+
+
+	<RobotNode name='LHsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='-52' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='-1' y='0' z='0'/>
+			<limits lo='0' hi='52' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LHsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_LASI'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-15.7722' />
+					<row2 c1='0' c2='1' c3='0' c4='43.9811' />
+					<row3 c1='0' c2='0' c3='1' c4='34.9948' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_LHIP'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-45.15' />
+					<row2 c1='0' c2='1' c3='0' c4='3.33725e-08' />
+					<row3 c1='0' c2='0' c3='1' c4='0' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_LPSI'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='24.5' />
+					<row2 c1='0' c2='1' c3='0' c4='-60' />
+					<row3 c1='0' c2='0' c3='1' c4='34.9948' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='LHx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LHx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.872665' hi='1.65806' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LHz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LHy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.349066' hi='1.13446' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LKsegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LHz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LHy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LKsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='-245' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='-1'/>
+			<limits lo='0' hi='245' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.14'/>
+			<CoM location='Custom' x='-2.75474e-12' y='1.04413e-05' z='121.6'/>
+			<InertiaMatrix>
+					<row1 c1='3.0625' c2='0' c3='0'/>
+					<row2 c1='0' c2='3.0625' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.636804'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/LKsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_LKNE'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-26.7885' />
+					<row2 c1='0' c2='1' c3='0' c4='3.33725e-08' />
+					<row3 c1='0' c2='0' c3='1' c4='1.58173' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_LTHI'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-32.78' />
+					<row2 c1='0' c2='1' c3='0' c4='5.71972e-05' />
+					<row3 c1='0' c2='0' c3='1' c4='61.28' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='LKx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LKx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-2.26893' hi='0' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LAsegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LMrot_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='0.987688' c2='0.151104' c3='-0.0404882' c4='0.6' />
+				<row2 c1='-0.156434' c2='0.954034' c3='-0.255633' c4='23.8' />
+				<row3 c1='0' c2='0.258819' c3='0.965926' c4='-18.7' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.261799' hi='0.261799' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LMrot_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_LMT1'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='17.7316' />
+					<row2 c1='0' c2='1' c3='0' c4='51.4544' />
+					<row3 c1='0' c2='0' c3='1' c4='-12.24' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_LMT5'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-36.2073' />
+					<row2 c1='0' c2='1' c3='0' c4='42.4769' />
+					<row3 c1='0' c2='0' c3='1' c4='-12.7363' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='LFx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LSCsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='-87' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='-1' y='0' z='0'/>
+			<limits lo='0' hi='87' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LSCsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_LBAK'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='40.2164' />
+					<row2 c1='0' c2='1' c3='0' c4='-51.365' />
+					<row3 c1='0' c2='0' c3='1' c4='7.07746' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='LSCx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LSCx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='0' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LSCz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LSCy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.349066' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LSsegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LSCz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-0.349066' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LSCy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LSsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='-110' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='-1' y='0' z='0'/>
+			<limits lo='0' hi='23' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.021'/>
+			<CoM location='Custom' x='10' y='4.16334e-14' z='0'/>
+			<InertiaMatrix>
+					<row1 c1='0.0298116' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.0063504' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.0298116'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/LSsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_LSHO'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-11.0491' />
+					<row2 c1='0' c2='1' c3='0' c4='-1.13565' />
+					<row3 c1='0' c2='0' c3='1' c4='6.38902' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='LSx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LSx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-1.22173' hi='3.31613' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LSz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LSy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='0' hi='2.79253' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LEsegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LSz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-1.22173' hi='1.0472' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LSy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LWsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='-145' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='-1'/>
+			<limits lo='0' hi='145' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.016'/>
+			<CoM location='Custom' x='-8.25728e-12' y='3.81383e-05' z='82.6'/>
+			<InertiaMatrix>
+					<row1 c1='0.0319821' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.0340787' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.0065229'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/LWsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_LFRA'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-15.4413' />
+					<row2 c1='0' c2='1' c3='0' c4='0.93' />
+					<row3 c1='0' c2='0' c3='1' c4='63.5425' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_LWPS'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-2.49894' />
+					<row2 c1='0' c2='1' c3='0' c4='-15.9993' />
+					<row3 c1='0' c2='0' c3='1' c4='0.167504' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_LWTS'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-2.49895' />
+					<row2 c1='0' c2='1' c3='0' c4='14.3563' />
+					<row3 c1='0' c2='0' c3='1' c4='0.167504' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='LWx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LWx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.523599' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LWy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LWy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-1.22173' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LWy_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftHandSegment_joint'/>
+		<Child name='LeftFingerJoint50y_joint'/>
+		<Child name='LeftFingerJoint31x_joint'/>
+		<Child name='LeftFingerJoint21x_joint'/>
+		<Child name='LeftFingerJoint11z_joint'/>
+		<Child name='LeftFingerJoint40y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftEyeSegmentX_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='-15' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='-1' y='0' z='0'/>
+			<limits lo='0' hi='15' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LeftEyeSegmentY_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftEyeSegmentY_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='30' />
+				<row3 c1='0' c2='0' c3='1' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='1' z='0'/>
+			<limits lo='0' hi='30' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftEyeSegmentY_joint_visu.wrl</File>
+		</Visualization>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint11y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='0.707107' c3='0.707107' c4='0' />
+				<row3 c1='0' c2='-0.707107' c3='0.707107' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint11y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftFingerJoint12y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint11z_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='-1' c2='0' c3='-1.50996e-07' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='10.584' />
+				<row3 c1='1.50996e-07' c2='0' c3='-1' c4='-7.884' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LeftFingerJoint11y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint12y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='21.168' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint12y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftFingerJoint13y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint13y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='17.064' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint13y_joint_visu.wrl</File>
+		</Visualization>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint21x_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='7.54979e-08' c2='-1' c3='8.74228e-08' c4='0' />
+				<row2 c1='-1' c2='-7.54979e-08' c3='-8.74228e-08' c4='13.554' />
+				<row3 c1='8.74228e-08' c2='-8.74228e-08' c3='-1' c4='-48.276' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LeftFingerJoint21y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint21y_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint21y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftFingerJoint22y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint22y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='26.46' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint22y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftFingerJoint23y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint23y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='15.444' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint23y_joint_visu.wrl</File>
+		</Visualization>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint31x_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='7.54979e-08' c2='-1' c3='8.74228e-08' c4='0' />
+				<row2 c1='-1' c2='-7.54979e-08' c3='-8.74228e-08' c4='0' />
+				<row3 c1='8.74228e-08' c2='-8.74228e-08' c3='-1' c4='-48.168' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LeftFingerJoint31y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint31y_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint31y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftFingerJoint32y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint32y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='28.728' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint32y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftFingerJoint33y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint33y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='18.36' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint33y_joint_visu.wrl</File>
+		</Visualization>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint40y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='7.54979e-08' c2='-1' c3='8.74228e-08' c4='0' />
+				<row2 c1='-1' c2='-7.54979e-08' c3='-8.74228e-08' c4='-6.25' />
+				<row3 c1='8.74228e-08' c2='-8.74228e-08' c3='-1' c4='-8.75' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='0.0872665' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint40y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftFingerJoint41x_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint41x_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='4.9' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='35.422' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LeftFingerJoint41y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint41y_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint41y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftFingerJoint42y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint42y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='26.352' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint42y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftFingerJoint43y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint43y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='17.82' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint43y_joint_visu.wrl</File>
+		</Visualization>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint50y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='7.54979e-08' c2='-1' c3='8.74228e-08' c4='0' />
+				<row2 c1='-1' c2='-7.54979e-08' c3='-8.74228e-08' c4='-12.88' />
+				<row3 c1='8.74228e-08' c2='-8.74228e-08' c3='-1' c4='-9.77' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='0.174533' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint50y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftFingerJoint51x_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint51x_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='8.8' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='29.8' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LeftFingerJoint51y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint51y_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint51y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftFingerJoint52y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint52y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='22.032' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint52y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='LeftFingerJoint53y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFingerJoint53y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='12.636' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/LeftFingerJoint53y_joint_visu.wrl</File>
+		</Visualization>
+	</RobotNode>
+
+
+	<RobotNode name='LeftFootHeight_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='-39' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='-1'/>
+			<limits lo='0' hi='39' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.013'/>
+			<CoM location='Custom' x='-8.35798e-08' y='25.225' z='19'/>
+			<InertiaMatrix>
+					<row1 c1='0.0036504' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.0111794' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.0096393'/>
+			</InertiaMatrix>
+		</Physics>
+	</RobotNode>
+
+
+	<RobotNode name='LeftHandSegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='-108' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='-1'/>
+			<limits lo='0' hi='108' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.006'/>
+			<CoM location='Custom' x='-8.25728e-12' y='3.81383e-05' z='53.4'/>
+			<InertiaMatrix>
+					<row1 c1='0.0021869' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.0033304' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.001283'/>
+			</InertiaMatrix>
+		</Physics>
+		<Sensor type='position' name='MARKER_LHPS'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-9.65197' />
+					<row2 c1='0' c2='1' c3='0' c4='-21.7232' />
+					<row3 c1='0' c2='0' c3='1' c4='78.9456' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_LHTS'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-10.3235' />
+					<row2 c1='0' c2='1' c3='0' c4='13.0487' />
+					<row3 c1='0' c2='0' c3='1' c4='69.6834' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_LIFD'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-7.41577' />
+					<row2 c1='0' c2='1' c3='0' c4='14.2213' />
+					<row3 c1='0' c2='0' c3='1' c4='14.536' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+	</RobotNode>
+
+
+	<RobotNode name='MidHeadSegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='66' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='1'/>
+			<limits lo='0' hi='66' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='LeftEyeSegmentX_joint'/>
+		<Child name='RightEyeSegmentX_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RAsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='-246' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='-1'/>
+			<limits lo='0' hi='246' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.04'/>
+			<CoM location='Custom' x='-3.88578e-13' y='1.04413e-05' z='139.5'/>
+			<InertiaMatrix>
+					<row1 c1='0.237419' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.256481' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.040572'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/RAsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_RTIP'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='12.8313' />
+					<row2 c1='0' c2='1' c3='0' c4='18.51' />
+					<row3 c1='0' c2='0' c3='1' c4='177.87' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='RAx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RAx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.698132' hi='0.523599' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RAz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RAy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.349066' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RAy_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_RANK'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='22.9' />
+					<row2 c1='0' c2='1' c3='0' c4='-4.19614e-07' />
+					<row3 c1='0' c2='0' c3='1' c4='-18.25' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RHEE'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-0.460001' />
+					<row2 c1='0' c2='1' c3='0' c4='-33.2618' />
+					<row3 c1='0' c2='0' c3='1' c4='-15.4999' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='RightFootHeight_joint'/>
+		<Child name='RMrot_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RAz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-0.523599' hi='0.523599' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RAy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='REsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='-188' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='-1'/>
+			<limits lo='0' hi='188' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.027'/>
+			<CoM location='Custom' x='0.0203848' y='3.81383e-05' z='106'/>
+			<InertiaMatrix>
+					<row1 c1='0.0837755' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.0940772' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.0287506'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/REsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_RAEL'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='1.54' />
+					<row2 c1='0' c2='1' c3='0' c4='-17.482' />
+					<row3 c1='0' c2='0' c3='1' c4='-2.20636' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RAOL'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-12.5' />
+					<row2 c1='0' c2='1' c3='0' c4='-15.5' />
+					<row3 c1='0' c2='0' c3='1' c4='-1.86715' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RUPA'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='19.8672' />
+					<row2 c1='0' c2='1' c3='0' c4='2.6444' />
+					<row3 c1='0' c2='0' c3='1' c4='126.53' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='REx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='REx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='2.79253' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='REz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='REz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-1.5708' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RWsegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RFx_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='0.987688' c2='0.151104' c3='0.0404882' c4='8.8' />
+				<row2 c1='-0.156434' c2='0.954034' c3='0.255633' c4='53.7' />
+				<row3 c1='0' c2='-0.258819' c3='0.965926' c4='-14.3922' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.785398' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RFx_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_RTOE'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-15.3868' />
+					<row2 c1='0' c2='1' c3='0' c4='33.7525' />
+					<row3 c1='0' c2='0' c3='1' c4='-2.49873' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+	</RobotNode>
+
+
+	<RobotNode name='RHsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='52' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='1' y='0' z='0'/>
+			<limits lo='0' hi='52' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RHsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_RASI'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='15.77' />
+					<row2 c1='0' c2='1' c3='0' c4='43.9811' />
+					<row3 c1='0' c2='0' c3='1' c4='34.9948' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RHIP'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='45.15' />
+					<row2 c1='0' c2='1' c3='0' c4='3.33725e-08' />
+					<row3 c1='0' c2='0' c3='1' c4='0' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RPSI'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-24.5' />
+					<row2 c1='0' c2='1' c3='0' c4='-60' />
+					<row3 c1='0' c2='0' c3='1' c4='34.9948' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='RHx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RHx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.872665' hi='1.65806' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RHz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RHy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-1.13446' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RKsegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RHz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RHy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RKsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='-245' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='-1'/>
+			<limits lo='0' hi='245' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.14'/>
+			<CoM location='Custom' x='0.0456274' y='1.04413e-05' z='121.6'/>
+			<InertiaMatrix>
+					<row1 c1='3.0625' c2='0' c3='0'/>
+					<row2 c1='0' c2='3.0625' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.636804'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/RKsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_RKNE'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='26.793' />
+					<row2 c1='0' c2='1' c3='0' c4='3.33733e-08' />
+					<row3 c1='0' c2='0' c3='1' c4='1.58173' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RTHI'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='39.81' />
+					<row2 c1='0' c2='1' c3='0' c4='4.6559e-05' />
+					<row3 c1='0' c2='0' c3='1' c4='140.46' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='RKx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RKx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-2.26893' hi='0' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RAsegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RMrot_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='0.987688' c2='-0.151104' c3='0.0404882' c4='0.6' />
+				<row2 c1='0.156434' c2='0.954034' c3='-0.255633' c4='23.8' />
+				<row3 c1='0' c2='0.258819' c3='0.965926' c4='-18.7' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.261799' hi='0.261799' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RMrot_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_RMT1'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-18.9131' />
+					<row2 c1='0' c2='1' c3='0' c4='51.6351' />
+					<row3 c1='0' c2='0' c3='1' c4='-12.2884' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RMT5'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='35.0239' />
+					<row2 c1='0' c2='1' c3='0' c4='42.6533' />
+					<row3 c1='0' c2='0' c3='1' c4='-12.7853' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='RFx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RSCsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='87' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='1' y='0' z='0'/>
+			<limits lo='0' hi='87' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RSCsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_RBAK'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-60.9917' />
+					<row2 c1='0' c2='1' c3='0' c4='-60.727' />
+					<row3 c1='0' c2='0' c3='1' c4='-48.1316' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='RSCx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RSCx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='0' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RSCz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RSCy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.349066' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RSsegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RSCz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-0.349066' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RSCy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RSsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='110' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='1' y='0' z='0'/>
+			<limits lo='0' hi='23' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.021'/>
+			<CoM location='Custom' x='-10' y='4.16334e-14' z='0'/>
+			<InertiaMatrix>
+					<row1 c1='0.0298116' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.0063504' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.0298116'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/RSsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_RSHO'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='11.0476' />
+					<row2 c1='0' c2='1' c3='0' c4='-1.13565' />
+					<row3 c1='0' c2='0' c3='1' c4='6.38902' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='RSx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RSx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-1.22173' hi='3.31613' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RSz_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RSy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-2.79253' hi='0' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='REsegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RSz_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='-1.0472' hi='1.22173' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RSy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RWsegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='-145' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='-1'/>
+			<limits lo='0' hi='145' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.016'/>
+			<CoM location='Custom' x='0.0203848' y='3.81383e-05' z='82.6'/>
+			<InertiaMatrix>
+					<row1 c1='0.0319821' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.0340787' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.0065229'/>
+			</InertiaMatrix>
+		</Physics>
+		<Visualization>
+			<File type='inventor'>./models/RWsegment_joint_visu.wrl</File>
+		</Visualization>
+		<Sensor type='position' name='MARKER_RFRA'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='15.4' />
+					<row2 c1='0' c2='1' c3='0' c4='0.930038' />
+					<row3 c1='0' c2='0' c3='1' c4='63.5425' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RWPS'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='2.31349' />
+					<row2 c1='0' c2='1' c3='0' c4='-15.9993' />
+					<row3 c1='0' c2='0' c3='1' c4='0.167504' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RWTS'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='2.31349' />
+					<row2 c1='0' c2='1' c3='0' c4='14.3563' />
+					<row3 c1='0' c2='0' c3='1' c4='0.167504' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='RWx_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RWx_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.523599' hi='0.349066' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RWy_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RWy_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-1.5708' hi='1.22173' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RWy_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint21x_joint'/>
+		<Child name='RightHandSegment_joint'/>
+		<Child name='RightFingerJoint11z_joint'/>
+		<Child name='RightFingerJoint31x_joint'/>
+		<Child name='RightFingerJoint40y_joint'/>
+		<Child name='RightFingerJoint50y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightEyeSegmentX_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='15' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='1' y='0' z='0'/>
+			<limits lo='0' hi='15' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RightEyeSegmentY_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightEyeSegmentY_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='30' />
+				<row3 c1='0' c2='0' c3='1' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='1' z='0'/>
+			<limits lo='0' hi='30' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightEyeSegmentY_joint_visu.wrl</File>
+		</Visualization>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint11y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='-1' c2='1.0677e-07' c3='-1.0677e-07' c4='0' />
+				<row2 c1='0' c2='0.707107' c3='0.707107' c4='0' />
+				<row3 c1='1.50996e-07' c2='0.707107' c3='-0.707107' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint11y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint12y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint11z_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='10.584' />
+				<row3 c1='0' c2='0' c3='1' c4='-7.884' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RightFingerJoint11y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint12y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='21.168' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint12y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint13y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint13y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='17.064' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint13y_joint_visu.wrl</File>
+		</Visualization>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint21x_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='7.54979e-08' c2='1' c3='-8.74228e-08' c4='0' />
+				<row2 c1='1' c2='-7.54979e-08' c3='8.74228e-08' c4='13.554' />
+				<row3 c1='8.74228e-08' c2='-8.74228e-08' c3='-1' c4='-48.3' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RightFingerJoint21y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint21y_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint21y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint22y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint22y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='26.46' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint22y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint23y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint23y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='15.444' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint23y_joint_visu.wrl</File>
+		</Visualization>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint31x_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='7.54979e-08' c2='1' c3='-8.74228e-08' c4='0' />
+				<row2 c1='1' c2='-7.54979e-08' c3='8.74228e-08' c4='0' />
+				<row3 c1='8.74228e-08' c2='-8.74228e-08' c3='-1' c4='-48.168' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RightFingerJoint31y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint31y_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint31y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint32y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint32y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='28.728' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint32y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint33y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint33y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='18.36' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint33y_joint_visu.wrl</File>
+		</Visualization>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint40y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='7.54979e-08' c2='1' c3='-8.74228e-08' c4='0' />
+				<row2 c1='1' c2='-7.54979e-08' c3='8.74228e-08' c4='-6.25' />
+				<row3 c1='8.74228e-08' c2='-8.74228e-08' c3='-1' c4='-8.75' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='0.0872665' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint40y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint41x_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint41x_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='-4.9' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='35.422' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RightFingerJoint41y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint41y_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint41y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint42y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint42y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='26.352' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint42y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint43y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint43y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='17.82' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint43y_joint_visu.wrl</File>
+		</Visualization>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint50y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='7.54979e-08' c2='1' c3='-8.74228e-08' c4='0' />
+				<row2 c1='1' c2='-7.54979e-08' c3='8.74228e-08' c4='-12.88' />
+				<row3 c1='8.74228e-08' c2='-8.74228e-08' c3='-1' c4='-9.97' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='0.174533' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint50y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint51x_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint51x_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='-8.828' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='29.774' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='0' y='1' z='0'/>
+			<limits lo='-0.785398' hi='0.785398' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='RightFingerJoint51y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint51y_joint'>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint51y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint52y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint52y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='22.032' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint52y_joint_visu.wrl</File>
+		</Visualization>
+		<Child name='RightFingerJoint53y_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFingerJoint53y_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='12.636' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='revolute'>
+			<axis x='1' y='0' z='0'/>
+			<limits lo='0' hi='1.5708' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Visualization>
+			<File type='inventor'>./models/RightFingerJoint53y_joint_visu.wrl</File>
+		</Visualization>
+	</RobotNode>
+
+
+	<RobotNode name='RightFootHeight_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='-39' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='-1'/>
+			<limits lo='0' hi='39' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.013'/>
+			<CoM location='Custom' x='-8.35776e-08' y='25.225' z='19'/>
+			<InertiaMatrix>
+					<row1 c1='0.0036504' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.0111794' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.0096393'/>
+			</InertiaMatrix>
+		</Physics>
+		<Child name='RightFootLength_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='RightFootLength_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='68' />
+				<row3 c1='0' c2='0' c3='1' c4='0' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='1' z='0'/>
+			<limits lo='0' hi='68' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+	</RobotNode>
+
+
+	<RobotNode name='RightHandSegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='-108' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='-1'/>
+			<limits lo='0' hi='108' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.006'/>
+			<CoM location='Custom' x='0.0203848' y='3.81383e-05' z='53.4'/>
+			<InertiaMatrix>
+					<row1 c1='0.0021869' c2='0' c3='0'/>
+					<row2 c1='0' c2='0.0033304' c3='0'/>
+					<row3 c1='0' c2='0' c3='0.001283'/>
+			</InertiaMatrix>
+		</Physics>
+		<Sensor type='position' name='MARKER_RHPS'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='8.67729' />
+					<row2 c1='0' c2='1' c3='0' c4='-22.2095' />
+					<row3 c1='0' c2='0' c3='1' c4='76.666' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RHTS'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='9.3514' />
+					<row2 c1='0' c2='1' c3='0' c4='14.9125' />
+					<row3 c1='0' c2='0' c3='1' c4='69.1177' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_RIFD'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='7.77317' />
+					<row2 c1='0' c2='1' c3='0' c4='13.1986' />
+					<row3 c1='0' c2='0' c3='1' c4='15.0756' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+	</RobotNode>
+
+
+	<RobotNode name='collarSegment_joint'>
+		<Transform>
+			<Matrix4x4 units='mm'>
+				<row1 c1='1' c2='0' c3='0' c4='0' />
+				<row2 c1='0' c2='1' c3='0' c4='0' />
+				<row3 c1='0' c2='0' c3='1' c4='188' />
+				<row4 c1='0' c2='0' c3='0' c4='1' />
+			</Matrix4x4>
+		</Transform>
+		<Joint type='prismatic'>
+			<translationdirection x='0' y='0' z='1'/>
+			<limits lo='0' hi='188' units='mm'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Physics>
+			<Mass unit='kg' value='0.17'/>
+			<CoM location='Custom' x='0' y='3.33729e-08' z='-33.84'/>
+			<InertiaMatrix>
+					<row1 c1='6.37245' c2='0' c3='0'/>
+					<row2 c1='0' c2='5.09635' c3='0'/>
+					<row3 c1='0' c2='0' c3='4.22532'/>
+			</InertiaMatrix>
+		</Physics>
+		<Sensor type='position' name='MARKER_STRN'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='-0.205368' />
+					<row2 c1='0' c2='1' c3='0' c4='60.7288' />
+					<row3 c1='0' c2='0' c3='1' c4='-80.5236' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Sensor type='position' name='MARKER_T10'>
+			<Transform>
+				<Matrix4x4 units='mm'>
+					<row1 c1='1' c2='0' c3='0' c4='0' />
+					<row2 c1='0' c2='1' c3='0' c4='-62.5189' />
+					<row3 c1='0' c2='0' c3='1' c4='-111.766' />
+					<row4 c1='0' c2='0' c3='0' c4='1' />
+				</Matrix4x4>
+			</Transform>
+		</Sensor>
+		<Child name='LSCsegment_joint'/>
+		<Child name='RSCsegment_joint'/>
+		<Child name='BLNsegment_joint'/>
+	</RobotNode>
+
+
+	<RobotNode name='root_joint'>
+		<Joint type='revolute'>
+			<axis x='0' y='0' z='1'/>
+			<limits lo='0' hi='0' units='radian'/>
+			<MaxAcceleration value='-1'/>
+			<MaxVelocity value='-1'/>
+			<MaxTorque value='-1'/>
+		</Joint>
+		<Child name='BPSegment_joint'/>
+		<Child name='LHsegment_joint'/>
+		<Child name='RHsegment_joint'/>
+	</RobotNode>
+
+
+
+        <RobotNodeSet name='All' kinematicRoot="root_joint">
+		<Node name='root_joint'/>
+		<Node name='BPSegment_joint'/>
+		<Node name='BPx_joint'/>
+		<Node name='BPz_joint'/>
+		<Node name='BPy_joint'/>
+		<Node name='BTSegment_joint'/>
+		<Node name='BTx_joint'/>
+		<Node name='BTz_joint'/>
+		<Node name='BTy_joint'/>
+		<Node name='collarSegment_joint'/>
+		<Node name='LSCsegment_joint'/>
+		<Node name='LSCx_joint'/>
+		<Node name='LSCz_joint'/>
+		<Node name='LSCy_joint'/>
+		<Node name='LSsegment_joint'/>
+		<Node name='LSx_joint'/>
+		<Node name='LSz_joint'/>
+		<Node name='LSy_joint'/>
+		<Node name='LEsegment_joint'/>
+		<Node name='LEx_joint'/>
+		<Node name='LEz_joint'/>
+		<Node name='LWsegment_joint'/>
+		<Node name='LWx_joint'/>
+		<Node name='LWy_joint'/>
+		<Node name='LeftHandSegment_joint'/>
+		<Node name='LeftFingerJoint50y_joint'/>
+		<Node name='LeftFingerJoint51x_joint'/>
+		<Node name='LeftFingerJoint51y_joint'/>
+		<Node name='LeftFingerJoint52y_joint'/>
+		<Node name='LeftFingerJoint53y_joint'/>
+		<Node name='LeftFingerJoint31x_joint'/>
+		<Node name='LeftFingerJoint31y_joint'/>
+		<Node name='LeftFingerJoint32y_joint'/>
+		<Node name='LeftFingerJoint33y_joint'/>
+		<Node name='LeftFingerJoint21x_joint'/>
+		<Node name='LeftFingerJoint21y_joint'/>
+		<Node name='LeftFingerJoint22y_joint'/>
+		<Node name='LeftFingerJoint23y_joint'/>
+		<Node name='LeftFingerJoint11z_joint'/>
+		<Node name='LeftFingerJoint11y_joint'/>
+		<Node name='LeftFingerJoint12y_joint'/>
+		<Node name='LeftFingerJoint13y_joint'/>
+		<Node name='LeftFingerJoint40y_joint'/>
+		<Node name='LeftFingerJoint41x_joint'/>
+		<Node name='LeftFingerJoint41y_joint'/>
+		<Node name='LeftFingerJoint42y_joint'/>
+		<Node name='LeftFingerJoint43y_joint'/>
+		<Node name='RSCsegment_joint'/>
+		<Node name='RSCx_joint'/>
+		<Node name='RSCz_joint'/>
+		<Node name='RSCy_joint'/>
+		<Node name='RSsegment_joint'/>
+		<Node name='RSx_joint'/>
+		<Node name='RSz_joint'/>
+		<Node name='RSy_joint'/>
+		<Node name='REsegment_joint'/>
+		<Node name='REx_joint'/>
+		<Node name='REz_joint'/>
+		<Node name='RWsegment_joint'/>
+		<Node name='RWx_joint'/>
+		<Node name='RWy_joint'/>
+		<Node name='RightFingerJoint21x_joint'/>
+		<Node name='RightFingerJoint21y_joint'/>
+		<Node name='RightFingerJoint22y_joint'/>
+		<Node name='RightFingerJoint23y_joint'/>
+		<Node name='RightHandSegment_joint'/>
+		<Node name='RightFingerJoint11z_joint'/>
+		<Node name='RightFingerJoint11y_joint'/>
+		<Node name='RightFingerJoint12y_joint'/>
+		<Node name='RightFingerJoint13y_joint'/>
+		<Node name='RightFingerJoint31x_joint'/>
+		<Node name='RightFingerJoint31y_joint'/>
+		<Node name='RightFingerJoint32y_joint'/>
+		<Node name='RightFingerJoint33y_joint'/>
+		<Node name='RightFingerJoint40y_joint'/>
+		<Node name='RightFingerJoint41x_joint'/>
+		<Node name='RightFingerJoint41y_joint'/>
+		<Node name='RightFingerJoint42y_joint'/>
+		<Node name='RightFingerJoint43y_joint'/>
+		<Node name='RightFingerJoint50y_joint'/>
+		<Node name='RightFingerJoint51x_joint'/>
+		<Node name='RightFingerJoint51y_joint'/>
+		<Node name='RightFingerJoint52y_joint'/>
+		<Node name='RightFingerJoint53y_joint'/>
+		<Node name='BLNsegment_joint'/>
+		<Node name='BLNx_joint'/>
+		<Node name='BLNz_joint'/>
+		<Node name='BLNy_joint'/>
+		<Node name='BUNsegment_joint'/>
+		<Node name='BUNx_joint'/>
+		<Node name='BUNz_joint'/>
+		<Node name='BUNy_joint'/>
+		<Node name='MidHeadSegment_joint'/>
+		<Node name='LeftEyeSegmentX_joint'/>
+		<Node name='LeftEyeSegmentY_joint'/>
+		<Node name='RightEyeSegmentX_joint'/>
+		<Node name='RightEyeSegmentY_joint'/>
+		<Node name='HeadSegment_joint'/>
+		<Node name='LHsegment_joint'/>
+		<Node name='LHx_joint'/>
+		<Node name='LHz_joint'/>
+		<Node name='LHy_joint'/>
+		<Node name='LKsegment_joint'/>
+		<Node name='LKx_joint'/>
+		<Node name='LAsegment_joint'/>
+		<Node name='LAx_joint'/>
+		<Node name='LAz_joint'/>
+		<Node name='LAy_joint'/>
+		<Node name='LeftFootHeight_joint'/>
+		<Node name='LMrot_joint'/>
+		<Node name='LFx_joint'/>
+		<Node name='RHsegment_joint'/>
+		<Node name='RHx_joint'/>
+		<Node name='RHz_joint'/>
+		<Node name='RHy_joint'/>
+		<Node name='RKsegment_joint'/>
+		<Node name='RKx_joint'/>
+		<Node name='RAsegment_joint'/>
+		<Node name='RAx_joint'/>
+		<Node name='RAz_joint'/>
+		<Node name='RAy_joint'/>
+		<Node name='RightFootHeight_joint'/>
+		<Node name='RightFootLength_joint'/>
+		<Node name='RMrot_joint'/>
+		<Node name='RFx_joint'/>
+	</RobotNodeSet>
+
+	<RobotNodeSet name='Joints_Prismatic'>
+		<Node name='BPSegment_joint'/>
+		<Node name='BTSegment_joint'/>
+		<Node name='collarSegment_joint'/>
+		<Node name='LSCsegment_joint'/>
+		<Node name='LSsegment_joint'/>
+		<Node name='LEsegment_joint'/>
+		<Node name='LWsegment_joint'/>
+		<Node name='LeftHandSegment_joint'/>
+		<Node name='RSCsegment_joint'/>
+		<Node name='RSsegment_joint'/>
+		<Node name='REsegment_joint'/>
+		<Node name='RWsegment_joint'/>
+		<Node name='RightHandSegment_joint'/>
+		<Node name='BLNsegment_joint'/>
+		<Node name='BUNsegment_joint'/>
+		<Node name='MidHeadSegment_joint'/>
+		<Node name='LeftEyeSegmentX_joint'/>
+		<Node name='LeftEyeSegmentY_joint'/>
+		<Node name='RightEyeSegmentX_joint'/>
+		<Node name='RightEyeSegmentY_joint'/>
+		<Node name='HeadSegment_joint'/>
+		<Node name='LHsegment_joint'/>
+		<Node name='LKsegment_joint'/>
+		<Node name='LAsegment_joint'/>
+		<Node name='LeftFootHeight_joint'/>
+		<Node name='RHsegment_joint'/>
+		<Node name='RKsegment_joint'/>
+		<Node name='RAsegment_joint'/>
+		<Node name='RightFootHeight_joint'/>
+		<Node name='RightFootLength_joint'/>
+	</RobotNodeSet>
+
+	<RobotNodeSet name='Joints_Revolute'>
+		<Node name='root_joint'/>
+		<Node name='BPx_joint'/>
+		<Node name='BPz_joint'/>
+		<Node name='BPy_joint'/>
+		<Node name='BTx_joint'/>
+		<Node name='BTz_joint'/>
+		<Node name='BTy_joint'/>
+		<Node name='LSCx_joint'/>
+		<Node name='LSCz_joint'/>
+		<Node name='LSCy_joint'/>
+		<Node name='LSx_joint'/>
+		<Node name='LSz_joint'/>
+		<Node name='LSy_joint'/>
+		<Node name='LEx_joint'/>
+		<Node name='LEz_joint'/>
+		<Node name='LWx_joint'/>
+		<Node name='LWy_joint'/>
+		<Node name='LeftFingerJoint50y_joint'/>
+		<Node name='LeftFingerJoint51x_joint'/>
+		<Node name='LeftFingerJoint51y_joint'/>
+		<Node name='LeftFingerJoint52y_joint'/>
+		<Node name='LeftFingerJoint53y_joint'/>
+		<Node name='LeftFingerJoint31x_joint'/>
+		<Node name='LeftFingerJoint31y_joint'/>
+		<Node name='LeftFingerJoint32y_joint'/>
+		<Node name='LeftFingerJoint33y_joint'/>
+		<Node name='LeftFingerJoint21x_joint'/>
+		<Node name='LeftFingerJoint21y_joint'/>
+		<Node name='LeftFingerJoint22y_joint'/>
+		<Node name='LeftFingerJoint23y_joint'/>
+		<Node name='LeftFingerJoint11z_joint'/>
+		<Node name='LeftFingerJoint11y_joint'/>
+		<Node name='LeftFingerJoint12y_joint'/>
+		<Node name='LeftFingerJoint13y_joint'/>
+		<Node name='LeftFingerJoint40y_joint'/>
+		<Node name='LeftFingerJoint41x_joint'/>
+		<Node name='LeftFingerJoint41y_joint'/>
+		<Node name='LeftFingerJoint42y_joint'/>
+		<Node name='LeftFingerJoint43y_joint'/>
+		<Node name='RSCx_joint'/>
+		<Node name='RSCz_joint'/>
+		<Node name='RSCy_joint'/>
+		<Node name='RSx_joint'/>
+		<Node name='RSz_joint'/>
+		<Node name='RSy_joint'/>
+		<Node name='REx_joint'/>
+		<Node name='REz_joint'/>
+		<Node name='RWx_joint'/>
+		<Node name='RWy_joint'/>
+		<Node name='RightFingerJoint21x_joint'/>
+		<Node name='RightFingerJoint21y_joint'/>
+		<Node name='RightFingerJoint22y_joint'/>
+		<Node name='RightFingerJoint23y_joint'/>
+		<Node name='RightFingerJoint11z_joint'/>
+		<Node name='RightFingerJoint11y_joint'/>
+		<Node name='RightFingerJoint12y_joint'/>
+		<Node name='RightFingerJoint13y_joint'/>
+		<Node name='RightFingerJoint31x_joint'/>
+		<Node name='RightFingerJoint31y_joint'/>
+		<Node name='RightFingerJoint32y_joint'/>
+		<Node name='RightFingerJoint33y_joint'/>
+		<Node name='RightFingerJoint40y_joint'/>
+		<Node name='RightFingerJoint41x_joint'/>
+		<Node name='RightFingerJoint41y_joint'/>
+		<Node name='RightFingerJoint42y_joint'/>
+		<Node name='RightFingerJoint43y_joint'/>
+		<Node name='RightFingerJoint50y_joint'/>
+		<Node name='RightFingerJoint51x_joint'/>
+		<Node name='RightFingerJoint51y_joint'/>
+		<Node name='RightFingerJoint52y_joint'/>
+		<Node name='RightFingerJoint53y_joint'/>
+		<Node name='BLNx_joint'/>
+		<Node name='BLNz_joint'/>
+		<Node name='BLNy_joint'/>
+		<Node name='BUNx_joint'/>
+		<Node name='BUNz_joint'/>
+		<Node name='BUNy_joint'/>
+		<Node name='LHx_joint'/>
+		<Node name='LHz_joint'/>
+		<Node name='LHy_joint'/>
+		<Node name='LKx_joint'/>
+		<Node name='LAx_joint'/>
+		<Node name='LAz_joint'/>
+		<Node name='LAy_joint'/>
+		<Node name='LMrot_joint'/>
+		<Node name='LFx_joint'/>
+		<Node name='RHx_joint'/>
+		<Node name='RHz_joint'/>
+		<Node name='RHy_joint'/>
+		<Node name='RKx_joint'/>
+		<Node name='RAx_joint'/>
+		<Node name='RAz_joint'/>
+		<Node name='RAy_joint'/>
+		<Node name='RMrot_joint'/>
+		<Node name='RFx_joint'/>
+	</RobotNodeSet>
+
+
+</Robot>

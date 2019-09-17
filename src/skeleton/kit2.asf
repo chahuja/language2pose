@@ -1,0 +1,220 @@
+# AST/ASF file generated using VICON BodyLanguage
+# -----------------------------------------------
+:version 1.10
+:name VICON
+:units
+  mass 1.0
+  length 0.45
+  angle deg
+:documentation
+   .ast/.asf automatically generated from VICON data using
+   VICON BodyBuilder and BodyLanguage model FoxedUp or BRILLIANT.MOD
+:root
+   order TX TY TZ RX RY RZ
+   axis XZY
+   position 0 0 0  
+   orientation 0 0 0
+  begin
+     id 1
+     name BLN
+     direction 0.0 1.0 0.0
+     length 9.9
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx ry rz
+    limits (-45.0, 15.0)
+           (-15.0, 15.0)
+           (-20.0, 20.0)
+  end
+  begin
+     id 2
+     name BP
+     direction 0.0 1.0 0.0
+     length 18.0
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx ry rz
+    limits (-50.0, 35.0)
+           (-45.0, 45.0)
+           (-20.0, 20.0)
+  end
+  begin
+     id 3
+     name BT
+     direction 0.0 1.0 0.0
+     length 27.0
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx ry rz
+    limits (-35.0, 27.0)
+           (-36.0, 36.0)
+           (-20.0, 20.0)
+  end
+  begin
+     id 4
+     name BUN
+     direction 0.0 1.0 0.0
+     length 13.5
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx ry rz
+    limits (-20.0, 30.0)
+           (-20.0, 20.0)
+           (-15.0, 15.0)
+  end
+  begin
+     id 5
+     name LA
+     direction 0.0 -1.0 0.0
+     length 110.7
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx ry rz
+    limits (-40.0, 30.0)
+           (-30.0, 30.0)
+           (-20.0, 20.0)
+  end
+  begin
+     id 6
+     name LE
+     direction 0.0 -1.0 0.0
+     length 84.6
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx ry
+    limits (0.0, 160.0)
+           (-90.0, 90.0)
+  end
+  begin
+     id 7
+     name LF
+     direction -0.15634 -0.25582 0.954
+     length 25.3302
+     axis -15.0 9.0 -0.0  XYZ
+    dof rx
+    limits (-45.0, 90.0)
+  end
+  begin
+     id 8
+     name LH
+     direction -1.0 0.0 0.0
+     length 23.4
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx ry rz
+    limits (-50.0, 95.0)
+           (-45.0, 45.0)
+           (-20.0, 65.0)
+  end
+  begin
+     id 9
+     name LK
+     direction 0.0 -1.0 0.0
+     length 110.25
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx
+    limits (-130.0, 0.0)
+  end
+  begin
+     id 10
+     name LMrot
+     direction 0.01982 -0.6177 0.78616
+     length 13.62311
+     axis 15.0 -9.0 -0.0  XYZ
+    dof rz
+    limits (-15.0, 15.0)
+  end
+  begin
+     id 11
+     name LS
+     direction -1.0 0.0 0.0
+     length 10.35
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx ry rz
+    limits (-70.0, 190.0)
+           (-70.0, 60.0)
+           (0.0, 160.0)
+  end
+  begin
+     id 12
+     name LW
+     direction 0.0 -1.0 0.0
+     length 65.25
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx rz
+    limits (-30.0, 20.0)
+           (-70.0, 90.0)
+  end
+  begin
+     id 13
+     name RA
+     direction 0.0 -1.0 0.0
+     length 110.7
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx ry rz
+    limits (-40.0, 30.0)
+           (-30.0, 30.0)
+           (-20.0, 20.0)
+  end
+  begin
+     id 14
+     name RE
+     direction 0.0 -1.0 0.0
+     length 84.6
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx ry
+    limits (0.0, 160.0)
+           (-90.0, 90.0)
+  end
+  begin
+     id 15
+     name RF
+     direction 0.15634 -0.25569 0.95403
+     length 25.32931
+     axis -15.0 -9.0 -0.0  XYZ
+    dof rx
+    limits (-45.0, 90.0)
+  end
+  begin
+     id 16
+     name RH
+     direction 1.0 0.0 0.0
+     length 23.4
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx ry rz
+    limits (-50.0, 95.0)
+           (-45.0, 45.0)
+           (-65.0, 20.0)
+  end
+  begin
+     id 17
+     name RK
+     direction 0.0 -1.0 0.0
+     length 110.25
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx
+    limits (-130.0, 0.0)
+  end
+  begin
+     id 18
+     name RMrot
+     direction 0.01982 -0.6177 0.78616
+     length 13.62311
+     axis 15.0 9.0 -0.0  XYZ
+    dof rz
+    limits (-15.0, 15.0)
+  end
+  begin
+     id 19
+     name RS
+     direction 1.0 0.0 0.0
+     length 10.35
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx ry rz
+    limits (-70.0, 190.0)
+           (-60.0, 70.0)
+           (-160.0, 0.0)
+  end
+  begin
+     id 20
+     name RW
+     direction 0.0 -1.0 0.0
+     length 65.25
+     axis 0.0 0.0 -0.0  XYZ
+    dof rx rz
+    limits (-30.0, 20.0)
+           (-90.0, 70.0)
+  end
