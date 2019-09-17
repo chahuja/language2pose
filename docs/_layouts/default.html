@@ -31,6 +31,9 @@
       {% if site.affiliations %}
       <h2 class="project-tagline" style="font-size: 1.5rem;">{{ site.affiliations }}</h2>
       {% endif %}
+      {% if site.venue %}
+      <h2 class="project-tagline" style="font-size: 1.5rem;">{{ site.venue }}</h2>
+      {% endif %}
 
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>

@@ -1,9 +1,10 @@
-<hr>
 <p align="center">
     <font size="6">
         <img src="images/overview.png">
     </font>
 </p>
+
+<hr>
 
 <p align="center">
     <font size="6">
@@ -34,8 +35,8 @@ Demo
     <font size="6">
         Media Coverage
         <br>
-        <img src="images/synced-logo.jpeg" width="200">
-        <img src="images/vb-logo.jpeg" width="170">
+        <a href="https://medium.com/syncedreview/cmu-creates-language2pose-model-that-generates-animations-from-text-5a08b5f71e97"><img src="images/synced-logo.jpeg" width="200"></a>
+        <a href="https://venturebeat.com/2019/09/11/ai-researchers-translate-language-into-physical-movement/"><img src="images/vb-logo.jpeg" width="170"></a>
     </font>
 </p>
 
