@@ -12,7 +12,7 @@
 ### Media Coverage
 <p align="center">
     <font size="6">
-        <img src="images/synced-logo.jpeg" width=100>
-        <img src="images/vb-logo.jpeg" width=85>
+        <img src="images/synced-logo.jpeg" width="100">
+        <img src="images/vb-logo.jpeg" width="85">
     </font>
 </p>
