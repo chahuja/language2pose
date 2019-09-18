@@ -11,6 +11,7 @@ There are 5 steps to running this code
 
 PS: The implementation of one of the baselines, proposed by [Lin et al.[1]](#references), was not publicly available and hence we make use of *our [implementation][#sampling]* to generate all the results and animations marked as Lin et al. Due to the differences in training hyperparameters, dataset and experiments, the numbers reported for Lin et al. in our paper differ from the ones in the original paper [1].
 PS: This repo, at the moment, is functional at best. Feel free to create issues/pull requests however you see fit. 
+
 ----
 ### Python Virtual Environment
 Anaconda is recommended to create the virtual environment
