@@ -9,8 +9,8 @@ There are 5 steps to running this code
 * Sampling
 * Rendering
 
+PS: The implementation of one of the baselines, proposed by [Lin et al.[1]](#references), was not publicly available and hence we make use of *our [implementation][#sampling]* to generate all the results and animations marked as Lin et al. Due to the differences in training hyperparameters, dataset and experiments, the numbers reported for Lin et al. in our paper differ from the ones in the original paper [1].
 PS: This repo, at the moment, is functional at best. Feel free to create issues/pull requests however you see fit. 
-
 ----
 ### Python Virtual Environment
 Anaconda is recommended to create the virtual environment
@@ -134,4 +134,5 @@ python render.py -dataset KITMocap -load save/jl2p/exp_726_cpk_jointSampleStart_
 python render.py -dataset KITMocap -load save/lin-et-al/exp_700_cpk_mooney_model_Seq2SeqConditioned10_time_16_chunks_1_weights.p -feats_kind fke -render_list subsets/render_list
 ```
 
+### References
 [1]: Lin, Angela S., et al. "1. Generating Animated Videos of Human Activities from Natural Language Descriptions." Learning 2018 (2018).

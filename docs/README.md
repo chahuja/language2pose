@@ -35,6 +35,7 @@ Demo
     <font size="6">
         Media Coverage
         <br>
+		<a href="https://www.scientificamerican.com/article/drenchable-drones-prickly-cells-and-face-tracked-chimps-science-gifs-to-start-your-week/"><img src="images/scientificamerican-logo.png" width="200"></a>
         <a href="https://medium.com/syncedreview/cmu-creates-language2pose-model-that-generates-animations-from-text-5a08b5f71e97"><img src="images/synced-logo.jpeg" width="200"></a>
         <a href="https://venturebeat.com/2019/09/11/ai-researchers-translate-language-into-physical-movement/"><img src="images/vb-logo.jpeg" width="170"></a>
     </font>
