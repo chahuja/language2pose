@@ -83,7 +83,7 @@ use_tp: use a trajectory predictor [1]. False for JL2P models
 s2v: sentence to vector model ('lstm' or 'bert')
 ```
 
-- Lin et. al. [1]
+-  Our Implementation of Lin et. al. [1]
 ```sh
 python train_seq2seq.py -batch_size 100 -cpk lin -curriculum 0 -dataset KITMocap -early_stopping 1 -exp 1 -f_new 8 -feats_kind rifke -losses "['MSELoss']" -lr 0.001 -mask "[0]" -model Seq2Seq -modelKwargs "{'hidden_size':1024, 'use_tp':True, 's2v':'lstm'}" -num_epochs 1000 -path2data ../dataset/kit-mocap -render_list subsets/render_list -s2v 1 -save_dir save/model -tb 1 -time 16 -transforms "['zNorm']"
 ```
@@ -111,7 +111,7 @@ Make sure you have downloaded the pre-trained models as described [here](#pre-tr
 python sample_wordConditioned.py -load save/jl2p/exp_726_cpk_jointSampleStart_model_Seq2SeqConditioned9_time_16_chunks_1_weights.p
 ```
 
-- Lin et. al. [1]
+- Our Implementation for Lin et. al. [1]
 ```sh
 python sample_wordConditioned.py -load save/lin-et-al/exp_700_cpk_mooney_model_Seq2SeqConditioned10_time_16_chunks_1_weights.p 
 ```
@@ -133,7 +133,7 @@ python render.py -dataset KITMocap -load <path-to-weights.p> -feats_kind fke -re
 python render.py -dataset KITMocap -load save/jl2p/exp_726_cpk_jointSampleStart_model_Seq2SeqConditioned9_time_16_chunks_1_weights.p -feats_kind fke -render_list subsets/render_list
 ```
 
-- Lin et. al. [1]
+- Our Implementation for Lin et. al. [1]
 ```sh
 python render.py -dataset KITMocap -load save/lin-et-al/exp_700_cpk_mooney_model_Seq2SeqConditioned10_time_16_chunks_1_weights.p -feats_kind fke -render_list subsets/render_list
 ```
