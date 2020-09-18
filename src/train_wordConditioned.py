@@ -275,8 +275,8 @@ def train(args, exp_num, data=None):
   # render.run('\n'.join(python_cmd))
 
   ## Render new sentences
-  print('Rendering New Sentences')
-  render_new_sentences(args, exp_num, data)
+  # print('Rendering New Sentences')
+  # render_new_sentences(args, exp_num, data)
 
   # End Log
   book._stop_log()
